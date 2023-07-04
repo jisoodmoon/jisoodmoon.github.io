@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:#f6f6f6;
+    font-family: 'Tsukimi Rounded', sans-serif;
+
+};
+
+/* Navigation Bar */
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar {
+    text-align: center;
+    padding: 40px;
+}
+
+#navbar li {
+    display: inline-block;
+    list-style: none;
+}
+
+#navbar a {
+    display: block;
+    margin: 0;
+    padding: 0px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/* Content */
+.container {
+    display: inline-block;
+    position: relative;
+    width: 98%;
+}
+
+#home-panel {
+    background-color: #EAD8E0;
+}
+
+#home-panel h2 {
+    font-size: 20em;
+    color: #fff;
+}
+
+/* Back to Top Button Animation */
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+	}
+	40% {
+		transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+		bottom: 30px;
+	}
+	60% {
+		transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+		bottom: 15px;
+	}
+}
+
+/* Back to Top Button */
+.arrow {
+    place-self: end;
+    position: fixed;
+    bottom: 20px;
+    
+
+    /* Arrow Styling */
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    z-index: 1000;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform:rotate(-135deg);
+}
+
+.arrow:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+}
