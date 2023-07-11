@@ -59,23 +59,6 @@ nav {
     width: 98%;
 }
 
-#home-panel {
-    background-color: #EAD8E0;
-    height: 100%;
-    margin: auto;
-    text-align: center;
-}
-
-#home-panel a {
-    color: #fff;
-    font-size: 25em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-}
-
 #about-me{
     margin: auto;
     display: block;
